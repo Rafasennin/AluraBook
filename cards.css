@@ -1,0 +1,133 @@
+.container__cards{
+    margin: 1em;
+    padding: 1em;
+    font-family: "Poppins", sans-serif;
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.cards{
+    grid-column: 1;
+    grid-row: 1 ;
+}
+
+.card__title{
+    font-weight: 700;
+    color: var(--yellow);
+    margin: 0.5em 0;  
+    display: flex;
+    justify-content: space-between;  
+}
+
+.card__sub-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #002F52;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.card__p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000D9;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.image__card{
+    grid-column: 2;
+    grid-row: 1;
+    padding: 1em;
+
+}
+
+.icones{
+    margin-left: 1em;
+    padding: 1em 0 2em 0;   
+}
+
+.icone__heart{
+    margin-right: 1em;
+}
+
+.more{
+    background: var(--yellow);
+    padding: 1em 2.2em;   
+    width: 23vw;
+    margin-left: 1em;
+    height: 2vh;
+}
+
+.more__link{
+   color: var(--white);
+   font-size: 16px;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__cards{
+        width: 50%;
+        margin: 2em auto;
+      }
+
+.image__card{
+    text-align: right;
+}  
+
+.more{
+    width: 9vw;
+}
+
+.card__title{
+    padding-top: 1em;
+}
+
+.card__sub-title{
+    padding: 1em 0;
+}
+
+.card__p{
+    width: 90%;
+}
+    
+}
+
+@media screen and (min-width: 1728px){
+
+    .container__cards{
+        width: 80%;
+
+        margin-top: 5em;
+        padding: 1em;
+        margin-left: 5em;
+
+      }
+
+      .card__title{
+        padding-top: 0;
+        font-size: 32px;
+    }
+
+    .card__sub-title{
+        font-size: 18px;
+    }
+
+    .icone__heart{
+        margin-bottom: 0;
+    }
+    
+    .more{
+        
+        padding: 1em 2.2em;   
+        width: 5.5vw;
+        margin-left: 1em;
+    }
+      
+}

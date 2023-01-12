@@ -1,0 +1,29 @@
+@import url("styles_header/header.css");
+@import url("banner.css");
+@import url("carrosel.css");
+@import url("cards.css");
+@import url("topics.css");
+@import url("update.css");
+@import url("footer.css");
+
+
+:root{
+    --background-color-grey:#EBECEE;
+    --yellow: #EB9B00;
+    --white: #FFFFFF;
+    --font-main: "Poppins", sans-serif;
+    --blue-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --grey:#858585;
+    --grey-2:#474646;
+    --footer-background:#F9F9F9;
+
+
+}
+
+body{
+    background-color: var(--background-color-grey);
+    font-size: 16px;
+    font-family: var(--font-main);
+    font-weight: 400;
+}
+

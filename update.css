@@ -1,0 +1,88 @@
+.update{
+    font-weight: "Poppins", sans-serif;
+    background-color: var(--white);
+    padding:1em;
+}
+
+.update__title{
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.update__p{
+    font-weight: 300;
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 1em 0;
+}
+
+.update__email{
+    padding: 1em;
+    border-radius: 24px;
+    width: 90%;
+    border: 1px solid #002F52;
+}
+
+.update__email::placeholder{
+    background: url(img/email.svg) no-repeat;
+    background-position: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #002F52;
+    padding-left: 2em;
+}
+
+hr{
+    margin: 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .update__div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
+    }
+       
+
+    .update__email{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .update__title{
+        padding: 2em 3em 1em 3em;
+        font-size: 24px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .update__p{
+        padding: 0 4em 1em 4em;
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    .update__email{
+        height: 10%;
+        width: 60%;
+    }
+    
+}
+
+@media screen and (min-width: 1728px) {
+
+    .update{
+        padding: 3em 19vw;
+    }
+    
+}
